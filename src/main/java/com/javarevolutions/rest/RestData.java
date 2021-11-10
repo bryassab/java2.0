@@ -16,6 +16,7 @@ public class RestData {
 	public @ResponseBody modeldata getData(@RequestParam(name = "msg") String message ) {
 		modeldata response = new modeldata();
 		response.setCode(200);
+		response.setCode(100);
 		response.setStatus(true);
 		response.setMensaje("Mensaje Recibido: " + message);
 		return response;
